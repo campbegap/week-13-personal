@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 
 <style>
 body {
-    background-color: #ffcccc;
+    background-color: #ffffe6;
 }
 .header {
     background-color:#339966;
@@ -58,9 +59,15 @@ body {
     </h2>
     <div id="water" class="accordion-collapse collapse show" data-bs-parent="#careAccordion">
         <div class="accordion-body">
-            <img src="watering.avif" class="img-fluid mb-3" alt="Watering plants">
-            Outdoor plants need consistent watering, but avoid overwatering. Each plant differs in how often it needs watering,
-            so be sure to read the guide on the individual plant. Keep an eye on the weather as well! Rain can be a friend.
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="watering.avif" class="img-fluid rounded" alt="Watering plants">
+                </div>
+                <div class="col-md-7">
+                    Outdoor plants need consistent watering, but avoid overwatering. Each plant differs in how often it needs watering,
+                    so be sure to read the guide on the individual plant. Keep an eye on the weather as well! Rain can be a friend.
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -68,14 +75,20 @@ body {
     <div class="accordion-item">
     <h2 class="accordion-header">
         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sun">
-            Sunlight Information
+        Sunlight Information
         </button>
     </h2>
     <div id="sun" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
         <div class="accordion-body">
-            <img src="sunlight.jpg" class="img-fluid mb-3" alt="sunshinee">
-            Most plants require at least 6 hours of sunlight a day, but it depends on the plant. Plants are either full-sun, partial-sun, or partial-shade. Read the guide provided
-            on the plant to decide where to plant it.
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="sunlight.jpg" class="img-fluid rounded" alt="Sunlight">
+                </div>
+                <div class="col-md-7">
+                    Most plants require at least 6 hours of sunlight a day, but it depends on the plant. Plants are either full-sun,
+                    partial-sun, or partial-shade. Read the guide provided on the plant to decide where to plant it.
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -88,9 +101,16 @@ body {
     </h2>
     <div id="soil" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
         <div class="accordion-body">
-            <img src="soil.jpg" class="img-fluid mb-3" alt="soils">
-            Plants will not grow without healthy roots, so it is important that plants have the right soil and drainage.
-            Fertilize the soil before planting, and for a few weeks after. Putting rocks at the bottom of the hole can also be helpful with drainage.
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="soil.jpg" class="img-fluid rounded" alt="Soil">
+                </div>
+                <div class="col-md-7">
+                    Plants will not grow without healthy roots, so it is important that plants have the right soil and drainage.
+                    Fertilize the soil before planting and for a few weeks after. Adding rocks at the bottom of the hole can
+                    also help improve drainage.
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -103,8 +123,15 @@ body {
     </h2>
     <div id="season" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
         <div class="accordion-body">
-            <img src="prune.jpg" class="img-fluid mb-3" alt="pruning">
-            Mulch around plants every year to promote drainage and healthy soil. Prune (trim) plants if needed. This promotes growth the next bloom.
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="prune.jpeg" class="img-fluid rounded" alt="Pruning">
+                </div>
+                <div class="col-md-7">
+                    Mulch around plants every year to promote drainage and healthy soil. Prune plants when needed to encourage
+                    stronger growth and better blooming in the next season.
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -138,3 +165,4 @@ body {
 
 </body>
 </html>
+```
