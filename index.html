@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -12,9 +12,9 @@
             background-color: #ffffe6;
         }
 
-            .carousel-item img {
-        height: 400px;
-        object-fit: cover;
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
         }
 
         .hero {
@@ -54,7 +54,7 @@
         img {
             border-radius: 10px;
         }
-        </style>
+    </style>
     </head>
 
     <body>
@@ -81,6 +81,18 @@
         <h1>Tis the Season for Planting!</h1>
         <p class="lead">Simple guides for growing beautiful plants outside</p>
         <a href="care.html" class="btn btn-light btn-lg mt-3">View Care Tips</a>
+
+        <br>
+
+        <button class="btn btn-success mt-3" onclick="showSpinner()">Load Tip</button>
+
+        <div id="spinner" class="text-center mt-3" style="display: none;">
+            <div class="spinner-border text-light"></div>
+        </div>
+
+        <p id="tipText" class="text-center mt-3" style="display: none;">
+            Water plants early in the morning for best results.
+        </p>
     </div>
     </section>
 
@@ -190,6 +202,16 @@
     <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t))
+
+    function showSpinner() {
+    document.getElementById("spinner").style.display = "block";
+    document.getElementById("tipText").style.display = "none";
+
+    setTimeout(function() {
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("tipText").style.display = "block";
+    }, 1500);
+    }
     </script>
 
     </body>
