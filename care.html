@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Care</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background-color: #f5f7f6;
+}
+.header {
+    background-color:#339966;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+    <a class="navbar-brand" href="index.html">Outdoor Plant Guide</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Care Tips</a></li>
+    </ul>
+    </div>
+</div>
+</nav>
+
+<section class="header">
+<div class="container">
+    <h1>Plant Care Tips</h1>
+    <p class="lead">Learn how to properly care for your outdoor plants!</p>
+</div>
+</section>
+
+<div class="container my-5">
+
+<div class="accordion" id="careAccordion">
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#water">
+        Watering Information
+        </button>
+    </h2>
+    <div id="water" class="accordion-collapse collapse show" data-bs-parent="#careAccordion">
+        <div class="accordion-body">
+        Outdoor plants need consistent watering, but avoid overwatering. Each plant differs in how often it needs watering,
+        so be sure to read the guide on the individual plant. Keep an eye on the weather as well! Rain can be a friend.
+        </div>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sun">
+        Sunlight Information
+        </button>
+    </h2>
+    <div id="sun" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
+        <div class="accordion-body">
+        Most plants require at least 6 hours of sunlight a day, but it depends on the plant. Plants are either full-sun, partial-sun, or partial-shade. Read the guide provided
+        on the plant to decide where to plant it.
+        </div>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#soil">
+        Soil
+        </button>
+    </h2>
+    <div id="soil" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
+        <div class="accordion-body">
+        Plants will not grow without healthy roots, so it is important that plants have the right soil and drainage.
+        Fertilize the soil before planting, and for a few weeks after. Putting rocks at the bottom of the hole can also be helpful with drainage.
+        </div>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#season">
+        Seasonal Care
+        </button>
+    </h2>
+    <div id="season" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
+        <div class="accordion-body">
+            Mulch around plants every year to promote drainage and healthy soil. Prune (trim) plants if needed. This promotes growth the next bloom.
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="text-center mt-5">
+    <button class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#checklist">
+    Quick Care Checklist
+    </button>
+</div>
+
+</div>
+
+<div class="offcanvas offcanvas-end" id="checklist">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title">Care Checklist</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+    <ul>
+    <li>Water plants based on soil dryness</li>
+    <li>Ensure the plant gets the right sunlight</li>
+    <li>Use well-draining and fertilized soil</li>
+    <li>Prune regularly for healthy growth</li>
+    </ul>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
